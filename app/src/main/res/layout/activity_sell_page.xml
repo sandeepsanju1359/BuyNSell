@@ -32,8 +32,8 @@
 
     <ImageView
         android:id="@+id/Img"
-        android:layout_width="363dp"
-        android:layout_height="235dp"
+        android:layout_width="356dp"
+        android:layout_height="221dp"
         android:layout_marginStart="142dp"
         android:layout_marginEnd="141dp"
         android:layout_marginBottom="85dp"
@@ -62,7 +62,6 @@
     <EditText
         android:id="@+id/etName"
         android:layout_width="0dp"
-        app:layout_constraintWidth_percent=".50"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
         android:layout_marginEnd="108dp"
@@ -72,17 +71,17 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.36"
+        app:layout_constraintWidth_percent=".50" />
 
     <EditText
         android:id="@+id/etPrice"
         android:layout_width="0dp"
-        app:layout_constraintWidth_percent=".50"
         android:layout_height="wrap_content"
-        android:layout_marginStart="91dp"
+        android:layout_marginStart="93dp"
         android:layout_marginEnd="110dp"
         android:layout_marginBottom="208dp"
         android:ems="10"
@@ -93,7 +92,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etName"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintVertical_bias="0.175"
+        app:layout_constraintWidth_percent=".50" />
 
     <EditText
         android:id="@+id/etPhone"
@@ -109,7 +109,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPrice"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.13"
         app:layout_constraintWidth_percent=".50" />
 
     <EditText
@@ -121,7 +121,9 @@
         android:layout_marginEnd="110dp"
         android:layout_marginBottom="113dp"
         android:ems="10"
-        android:hint="Years Of Use"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:hint="Description"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,11 +137,14 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#30FAFA"
+        android:background="@color/teal_200"
+        app:menu="@menu/botton_navbar"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/botton_navbar" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnSubmit"
